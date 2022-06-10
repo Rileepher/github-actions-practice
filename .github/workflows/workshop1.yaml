@@ -14,7 +14,6 @@ jobs:
         pip install -r requirements.txt
     - name: python server test
       run: |
-        python flaskme.py > log.txt 2>&1 &
-    - name: pytest
-      run: |
+        python3 server.py > log.txt 2>&1 &
         pytest -vv
+        

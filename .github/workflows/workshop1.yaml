@@ -15,3 +15,6 @@ jobs:
     - name: python server test
       run: |
         python flaskme.py > log.txt 2>&1 &
+    - name: pytest
+      run: |
+        pytest -vv
